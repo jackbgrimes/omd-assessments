@@ -1,0 +1,178 @@
+.omda-section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* form nav */
+.omda-section .gf_page_steps .gf_step {
+    color: #22b6a9;
+    width: 100%;
+}
+
+.omda-section .gf_step_number {
+    border-radius: 0 !important; 
+    border: none !important;
+    height: 0 !important;
+}
+
+.omda-section .gf_step_number::before,
+.omda-section .gf_step_number::after {
+    display: none !important;
+}
+
+.omda-section .gf_step_active .gf_step_number {
+    background-color: transparent !important;
+    color: #334152;
+}
+
+.omda-section .gf_step_active .gf_step_label {
+    color: #334152;
+}
+
+/* form headers */
+.omda-form-head {
+    background-color: #22b6a9;
+    color: #fff;
+    border-bottom: none !important;
+    border-radius: 5px 5px 0px 0px;
+    margin: 0;
+    padding: 0 !important;
+}
+
+.omda-form-head h3 {
+    margin: 0;
+    padding: 20px !important;
+    font-size: 16px;
+}
+
+.omda-form-subhead {
+    margin: 0;
+    padding: 0px !important;
+    background-color: #f0f0f0;
+    color: #334152;
+}
+
+.omda-form-subhead h3 {
+    margin: 0;
+    padding: 20px !important;
+    font-size: 16px;
+}
+
+/* form inputs */
+.omda-legend-spacer,
+.omda-field .gfield_label {
+    width: 45%;
+    float: left !important;
+}
+
+.omda-legend-content,
+.omda-field .ginput_container.ginput_container_radio {
+    width: 50%;
+    margin: 0 !important;
+    padding: 0;
+    float: right !important;
+}
+
+.omda-legend p {
+    font-size: 16px;
+    padding-left: 8px;
+}
+
+.omda-field .ginput_container_radio label {
+    display: none !important;
+}
+
+.omda-legend-content,
+.omda-field .ginput_container .gfield_radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.omda-field .ginput_container .gfield_radio .gchoice {
+    margin: 0;
+    padding: 0 0 0 8px;
+}
+
+.omda-field .ginput_container .gfield_radio .gchoice input {
+    margin: 0;
+    padding: 0;
+}
+
+.omda-list p {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.omda-list div.gfield_description {
+    padding-top: 0 !important;
+    margin: 0;
+}
+
+
+/* submissions page */
+
+/* SCSS ordering 
+ * omda-submissions-list
+ * 
+ * submission-list-item
+ * > submission-content
+ * > submission-form
+ * > > submission-button
+ * > > submission-link
+ *
+ * submission-list-header
+ */
+.omda-submissions-list {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.submission-list-item {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    border-bottom: 1px solid #33415250;
+    list-style: none;
+    padding: 14px 10px;
+}
+.submission-content {
+    margin: 0;
+    padding: 0;
+}
+.submission-form {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+}
+.submission-button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #334152;
+    /* temp */
+    font-size: 16px;
+}
+.submission-link {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #334152;
+    text-decoration: none;
+    /* temp */
+    font-size: 16px;
+}
+.submission-button:hover,
+.submission-button:focus,
+.submission-link:hover,
+.submission-link:focus {
+    cursor: pointer;
+    color: #00b6a9;
+}
+
+.submission-list-header {
+    background: none;
+    padding-top: 0;
+    font-weight: bold;
+}
